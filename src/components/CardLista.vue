@@ -1,11 +1,11 @@
 <template>
    <div>
-     <div v-if="parte01">
-        <p>hey</p>
-        <h2>valores</h2>
+     <div v-if="modelos==parte01">
+        <p>PEGOU 2</p>
+        <h2>valores1</h2>
         <img src="@/assets/logo.png" alt="vue"/>
     </div>
-     <div v-if="parte02">
+     <div v-if="modelos==parte02">
         <p>PEGOU 2</p>
         <h2>valores2</h2>
         <img src="@/assets/logo.png" alt="vue"/>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-    props:['parte01','parte02'],
+    props:['modelos'],
     data () {
         return {}
     }

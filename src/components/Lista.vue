@@ -2,7 +2,6 @@
   <div>
   <div  class="fundo">
     <CardLista :parte01="parte01"/>
-    <CardLista :parte02="parte02"/>
   </div>
   </div>
 </template>
