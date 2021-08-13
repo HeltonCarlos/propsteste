@@ -1,7 +1,6 @@
 <template>
     <div>
-        <Card :parte01="parte01=true"/>
-        <Card :parte02="parte02=true"/>
+        <Card />
     </div>
 </template>
 
@@ -18,7 +17,7 @@ export default {
 
 <style scoped>
 h3 {
-  margin: 40px 0 0;
+  margin: 40px ;
 }
 ul {
   list-style-type: none;
