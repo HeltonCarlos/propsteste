@@ -1,33 +1,25 @@
 <template>
-    <div>
-        <Card />
+    <div class="dark">
+        <CardLista :valor01="valor01" />
     </div>
 </template>
 
 <script>
-import Card from '@/components/Card.vue'
-
+import CardLista from '@/components/CardLista.vue';
 export default {
-  name: 'App',
+  name: 'Dashboard',
   components: {
-    Card
+    CardLista
+  },
+  data(){
+    return {
+      valor01:true,
+    }
   }
 }
 </script>
 
 <style scoped>
-h3 {
-  margin: 40px ;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+.dark{background-color: #000000;width: 250px;
+height: 250px;border-radius:8px ;margin: 20px;}
 </style>
